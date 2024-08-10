@@ -1,16 +1,10 @@
 # getx
 
-A new Flutter project.
+<p>
+  <img src = "https://github.com/user-attachments/assets/0dc8f5cf-d0c3-4b77-bbd0-34a02c035f08" height = 25% width = 20%>
+  <img src = "https://github.com/user-attachments/assets/47b1540d-5ff9-4d8f-b451-f1fcc1c4f803" height = 25% width = 20%>
+</p>
+<div align = "center">
+  <video height = "300" src ="https://github.com/user-attachments/assets/23adcd6b-87b6-4d47-8afa-18bd253bc6aa" />
+</div>
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
