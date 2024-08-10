@@ -20,11 +20,15 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.dark(
           primary: Colors.lightBlue,
           secondary: Colors.lightBlue,
+          onPrimary: Colors.black,
+              onSecondary: Colors.white
         )),
         theme: ThemeData(
           colorScheme: ColorScheme.light(
             primary: Colors.black,
             secondary: Color(0xff333333),
+            onPrimary: Colors.white,
+            onSecondary: Colors.black
           ),
         ),
         themeMode:
@@ -33,11 +37,11 @@ class MyApp extends StatelessWidget {
           GetPage(
               name: '/',
               page: () => FirstPage(),
-              transition: Transition.fadeIn),
+              transition: Transition.leftToRight),
           GetPage(
               name: '/second',
               page: () => HomePage(),
-              transition: Transition.fade),
+              transition: Transition.rightToLeft),
         ],
       );
     });

@@ -9,6 +9,7 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        // backgroundColor: Colors.black38,
         backgroundColor: Colors.black,
         centerTitle: true,
         title: Text('First Page',style: TextStyle(fontSize: 30,color: Colors.white),),
@@ -18,7 +19,7 @@ class FirstPage extends StatelessWidget {
           onPressed: () {
             Get.toNamed('/second');
           },
-          child: Text('Goto Counter Page',style: TextStyle(fontSize: 20),),
+          child: Text('Click Here',style: TextStyle(fontSize: 20),),
         ),
       ),
     );
