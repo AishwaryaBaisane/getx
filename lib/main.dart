@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'Cantroller/Controller.dart';
+import 'Employ_data/view/Employe_homePage.dart';
 import 'View/First_Page/splash_screen.dart';
 import 'View/Home_Page/HomePage.dart';
 
@@ -36,12 +37,8 @@ class MyApp extends StatelessWidget {
         getPages: [
           GetPage(
               name: '/',
-              page: () => FirstPage(),
+              page: () => const EmployeeHomepage(),
               transition: Transition.leftToRight),
-          GetPage(
-              name: '/second',
-              page: () => HomePage(),
-              transition: Transition.rightToLeft),
         ],
       );
     });
