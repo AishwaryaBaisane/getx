@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_common/get_reset.dart';
 import 'package:get/get_core/src/get_main.dart';
 
+import '../../Utils/global.dart';
 import '../Controller/Employe_controller.dart';
 import '../modal/Employe_modal.dart';
 
@@ -77,7 +78,10 @@ class EmployeeHomepage extends StatelessWidget {
                             ),
                             actions: <Widget>[
                               TextButton(
-                                child: const Text('Approve', style: TextStyle(fontSize: 18),),
+                                child: const Text(
+                                  'Approve',
+                                  style: TextStyle(fontSize: 18),
+                                ),
                                 onPressed: () {
                                   print(index);
                                   employeController.addAtIndex(index, {
@@ -92,7 +96,10 @@ class EmployeeHomepage extends StatelessWidget {
                                   onPressed: () {
                                     Navigator.pop(context);
                                   },
-                                  child: Text('Cancle', style: TextStyle(fontSize: 18),))
+                                  child: Text(
+                                    'Cancle',
+                                    style: TextStyle(fontSize: 18),
+                                  ))
                             ],
                           );
                         },
@@ -144,13 +151,11 @@ class EmployeeHomepage extends StatelessWidget {
                   ),
                   actions: <Widget>[
                     TextButton(
-                      child: const Text(
-                        'Approve',
-                        style: TextStyle(fontSize: 18),
-                      ),
-                      onPressed: () {
-                        bool data = formKey.currentState!.validate();
-                        if (data) {
+                        child: const Text(
+                          'Approve',
+                          style: TextStyle(fontSize: 18),
+                        ),
+                        onPressed: () {
                           Map m1 = {
                             'employee_id': txtId.text,
                             'name': txtName.text,
@@ -161,9 +166,7 @@ class EmployeeHomepage extends StatelessWidget {
                           txtId.clear();
                           txtPosition.clear();
                           Navigator.pop(context);
-                        }
-                      },
-                    ),
+                        }),
                     TextButton(
                       onPressed: () {
                         Navigator.pop(context);
@@ -187,13 +190,6 @@ class EmployeeHomepage extends StatelessWidget {
   TextFormField buildTextFormField(
       {required TextEditingController controller, required String label}) {
     return TextFormField(
-      validator: (value) {
-        if (value!.isEmpty) {
-          return 'Required';
-        } else {
-          return null;
-        }
-      },
       controller: controller,
       keyboardType: TextInputType.text,
       decoration: InputDecoration(

@@ -17,6 +17,3 @@ class EmployeeModal  {
         position: m1['position']);
   }
 }
-TextEditingController txtId = TextEditingController();
-TextEditingController txtName = TextEditingController();
-TextEditingController txtPosition = TextEditingController();
