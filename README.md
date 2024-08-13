@@ -29,6 +29,7 @@ dependencies:
 * Model: Represents the employee data structure.
 * Controller: Manages CRUD operations and holds the state of the employee list.
 * Views: Flutter widgets for adding, displaying, and editing employee data.
+
 With these steps, you should be able to create a basic CRUD application for employee data using GetX in Flutter. 
 <p>
   <img src = "https://github.com/user-attachments/assets/89a851c2-8d9c-4462-9228-404f0b14958f" height = 25% width = 20%>
