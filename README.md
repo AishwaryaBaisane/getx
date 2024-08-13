@@ -13,7 +13,7 @@
 - GetX is a powerful state management solution for Flutter that can handle complex state management, dependency injection, and route management.
 -  When it comes to performing CRUD (Create, Read, Update, Delete) operations on employee data using GetX, you’ll need to follow these steps:-
 
-### 1. Setup GetX in Your Flutter Project
+###  Setup GetX in Your Flutter Project
 ```dart
 First, add GetX to your pubspec.yaml file:
 
